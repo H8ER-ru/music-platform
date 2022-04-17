@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/TrackProgress.module.sass'
+import styles from '../styles/TrackProgress.module.sass';
 
 interface TrackProgressProps {
   left: number;

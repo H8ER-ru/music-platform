@@ -28,7 +28,8 @@ export const playerReducer = (
     case PlayerActionTypes.SET_ACTIVE:
       return { ...state, active: action.payload };
     case PlayerActionTypes.SET_VOLUME:
-      return { ...state, volume: action.payload, duration:0, currentTime: 0 };
+      localStorage.setItem('volume', String(action.payload));
+      return { ...state, volume: action.payload };
     default:
       return state;
   }

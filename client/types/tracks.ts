@@ -17,7 +17,7 @@ export interface ITrack {
 
 export interface TrackState {
   tracks: ITrack[];
-  error: string
+  error: string;
 }
 
 export enum TrackActionTypes {
